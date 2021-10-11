@@ -1,0 +1,124 @@
+:root{
+    /* declarando variaveis*/
+    --vermelho: #e50914;
+    --preto: #141414; 
+
+}
+
+
+* {
+    padding: 0;
+    margin: 0;  
+    box-sizing: border-box; /* o limite sempre vai ser a borda da caixa*/
+}
+
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+
+    
+}
+
+ header .container {
+    display: flex; /* por padrão coloca em linhas*/
+    align-items: center;
+    justify-content: space-between; /*cria um espaço entre as tags*/
+    
+
+}
+.logo{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    margin-left: 4px;
+
+}
+
+header nav a{ /*navegador*/
+    text-decoration: none;
+    color: #AAA;
+    margin-right: 10px;
+
+}
+
+header nav a:hover{ /*qd mouse está na nav*/
+    color: #fff;
+}
+
+.container{
+    margin-left: 20px;
+}
+
+
+.carrosel-filmes{
+    margin-top: 8px;
+}
+/* Filme Principal*/
+
+.filme-principal{
+    font-size: 16px;             /*camada p/ melhorar o contraste*/
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/capa-house.jpg');
+    height: 700px;
+    background-size: cover; /*a imagem vai pegar toda a cobertura do container*/
+
+    display: flex;
+    flex-direction: column; /*coloca em coluna, padrão é linha*/
+    justify-content: center;
+    align-items:flex-start;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 90px;
+    margin-top: 10px;
+    font-size: 22px;
+
+   
+}
+
+.filme-principal .titulo{
+    margin-top: -70px;
+    font-size: 80px;
+    font-family: 'Trebuchet MS';
+    
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color:white;
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+  
+
+    cursor: pointer;
+    
+    
+}
+
+.botoes{
+                
+    margin-top: 150px;       
+
+}
+.botao:hover{
+    background: white;
+    color: black;
+    transition: 1s ease all;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.filme-principal .container{
+    width: 80%;
+}
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
